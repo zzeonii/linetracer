@@ -66,13 +66,13 @@ void right () {
   digitalWrite(motor_A1, HIGH);
   digitalWrite(motor_A2, LOW);
   digitalWrite(motor_B1, LOW);
-  digitalWrite(motor_B2, LOW);
+  analogWrite(motor_B2, 150);
 }
 
 void left() {
   //좌
   digitalWrite(motor_A1, LOW);
-  digitalWrite(motor_A2, LOW);
+  analogWrite(motor_A2, 150);
   digitalWrite(motor_B1, HIGH);
   digitalWrite(motor_B2, LOW);
 }
