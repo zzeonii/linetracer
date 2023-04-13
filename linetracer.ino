@@ -39,16 +39,16 @@ void loop() {
   // 자동차가 가야할 방향을 "  " 안에 적어주세요 (직진/정지/좌회전/우회전)
   // 예)  Serial.println("직진");
   if (IR_L_data == 0 and IR_M_data == 1 and IR_R_data == 0) {
-    Serial.println("  ");
+    Serial.println("직진");
   }
   else if (IR_L_data == 1 and IR_M_data == 0 and IR_R_data == 0) {
-    Serial.println("  ");
+    Serial.println("좌회전");
   }
   else if (IR_L_data == 0 and IR_M_data == 0 and IR_R_data == 1) {
-    Serial.println("  ");
+    Serial.println("우회전");
   }
   else if (IR_L_data == 1  and IR_R_data == 1) {
-    Serial.println("  ");
+    Serial.println("정지");
   }
 }
 
